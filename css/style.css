@@ -79,6 +79,7 @@ body {
     width: 469px;
     min-height: 214px;
     background-color: white;
+
 }
 
 /*Блок 2*/
@@ -116,7 +117,7 @@ body {
     line-height: 24px;
     width: 100%;
     min-height: 63px;
-    margin: 0 0 0 0;
+    margin: 0 0 20px 0;
 }
 
 video {
@@ -192,12 +193,12 @@ video {
 
 figure {
   display:flex;
-  margin: 0 0 30px 0;
+  margin: 0 auto 30px 15px;
 }
 
 figure img {
     display:block;
-    margin: 0 0 0 0;
+    margin: 0 15px 0 0;
 }
 
 .h3-screenshots {
@@ -205,7 +206,7 @@ figure img {
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
-    margin: 0 0 15px 15px;
+    margin: 0 0 15px 0;
 }
 
 .p-screenshots {
@@ -214,7 +215,7 @@ figure img {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    margin: 0 15px 0 15px;
+    margin: 0 0 0 0;
 }
 
 /*Блок 5*/
@@ -230,7 +231,7 @@ figure img {
 
 article {
     display: flex;
-    margin: 0 0 30px 0;
+    margin: 0 15px 30px 0;
 }
 
 article img {
@@ -239,11 +240,12 @@ article img {
     border-radius: 50%;
     margin: 0 0 0 0;
 }
+
 .reviews-text {
     width: 483px;
     min-height: 121px;
     padding: 10px;
-    margin: 0 15px 0 27px;
+    margin: 0 0 0 27px;
     box-sizing: border-box;
     border-radius: 10px;
     background-color: #ebebeb;
@@ -284,8 +286,6 @@ article img {
     
 }
 
-
-
 /*Блок 6*/
 
 .buy-pd {
@@ -305,7 +305,9 @@ article img {
   box-sizing: border-box;
   border: 1px solid #445161;
   background-color: #445161;
-  border-radius: 10px; 
+  border-radius: 10px;
+  padding: 0 0 20px 0;
+
 }
 
 .buy-class:nth-child(4) {
@@ -323,47 +325,239 @@ article img {
 }
 
 .span-buy {
-    border: 2px solid #445162;
+    border: 2px solid #445161;
     background-color: #ffffff;
     color: #445162;
     font-size: 40px;
     font-weight: 400;
-    line-height: 30px;
-    min-height: 71px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 0 0;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    display: block;
 }
 
 .button {
+    display: block;
+    width: 260px;
+    /*min-height: 40px;*/
+    text-align: center;
+    text-decoration: none;
     color: #445161;
     font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    border-radius: 10px;
-    background-color: #ffffff;
-    width: 260px;
-    height: 40px;
-    text-align: center;
     line-height: 18px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #ffffff;
+    word-break: break-all;
+    padding: 14px 0 14px 0;
+    margin: 0 auto;
+    border: 1px solid #445161;
+    
 }
 
 .button:hover {
-    box-shadow: 0 2px 5px 1px #333333;
+    border-color: #ffffff;
     background-color: #445161;
     color: #ffffff;
 }
 
 .button:active {
-    box-shadow: none;
+    border-color: #ffffff;
 }
 
 
 /*Блок 7*/
 
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1280px;
+    padding: 50px 0 50px 0;
+    background-color: #445161;
+}
+  
+.h2-white {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 30px 0;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+}
+  
+.contact_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+    margin: 0 46px 0 0;
+}
+  
+.contact_form input[type="text"],
+.contact_form input[type="email"],
+.contact_form textarea {
+    width: 100%;
+    height: 40px;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color:  #ffffff;
+    outline: none;
+    text-transform: capitalize;
+}
+  
+.contact_form input[type="text"]:hover,
+.contact_form input[type="email"]:hover,
+.contact_form textarea:hover {
+    background-color: gray;
+    color: white;
+    border-color: white;
+}
+  
+.contact_form input[type="text"]:hover::placeholder,
+.contact_form input[type="email"]:hover::placeholder,
+.contact_form textarea:hover::placeholder {
+    color: white;
+}
+  
+.contact_form textarea {
+    width: 500px;
+    height: 170px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color:  #ffffff;
+    outline: none;
+    resize: none;
+}
+  
+input[placeholder],
+textarea[placeholder] {
+    text-overflow:ellipsis;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}  
+    
+.contact_form input[type="submit"] {
+    border-radius: 5px;
+    border: 1px solid #445161;
+    background-color:  #ffffff;
+    width: 140px;
+    height: 40px;
+    text-transform: uppercase;
+    font-family: Arial;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    outline: none;
+    
+}
+  
+.contact_form input[type="submit"]:hover {
+    background-color: #445161;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+  
+.contact_form input[type="submit"]:active {
+    box-shadow: none;
+
+}
+
+.social-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #ffffff;
+    margin: 0 0 37px 0;
+  
+}
+
+.social-list a {
+    margin:0 0 15px 0;
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.social-list a:active {
+    color: #333333;
+}
+
+.social-list a:hover {
+    color: #989898;
+}
+  
+.social-list a::before {
+    display: inline-block;
+    margin-right: 7px;
+    vertical-align: -20%;
+}
+  
+.social-list-skype::before {
+    content: url(../img/skype_icon.png);
+    
+}
+  
+.social-list-icq::before {
+    content: url(../img/icq_icon.png);
+    
+}
+  
+.social-list-email::before {
+    content: url(../img/email_icon.png);
+    
+}
+  
+.social-list-phone::before {
+    content: url(../img/phone_icon.png);
+
+}
+
+.social-img i {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+}
+
+.social-img i:active {
+    color: #333333;
+}
+
+.social-img i:hover {
+    color: #989898;
+}
+
+
+
+
+  
+
+
+  
 /*Блок 8*/
+
+.copyright {
+    width: 100%;
+    color: #445161;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
